@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>会员注册 - 历史文化博物馆</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container header-wrap">
+        <div class="logo">历史文化博物馆</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="exhibition.html">展馆介绍</a></li>
+                <li><a href="guide.html">参观指南</a></li>
+                <li><a href="news.html">新闻动态</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="register.html" class="active">会员注册</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="content-box form-container">
+        <h2 class="title-h2">博物馆会员注册</h2>
+        <form id="regForm">
+            <div class="form-item">
+                <label>用户名：</label>
+                <input type="text" id="username" placeholder="请设置登录用户名">
+            </div>
+            <div class="form-item">
+                <label>手机号码：</label>
+                <input type="text" id="phone" placeholder="请输入11位手机号">
+            </div>
+            <div class="form-item">
+                <label>登录密码：</label>
+                <input type="password" id="pwd" placeholder="密码至少6位字符">
+            </div>
+            <div class="form-item">
+                <label>确认密码：</label>
+                <input type="password" id="repwd" placeholder="再次输入密码">
+            </div>
+            <div class="tip-text"></div>
+            <div class="form-item">
+                <label></label>
+                <button type="submit" class="btn">提交注册</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>历史文化博物馆 版权所有 &copy; 2026  |  地址：XX市XX区文化路88号</p>
+    </div>
+</footer>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Microsoft Yahei", sans-serif;
+}
+
+body {
+    background-color: #f5f6f8;
+    color: #333;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 头部导航区域 */
+header {
+    background-color: #283655;
+    color: #fff;
+    padding: 18px 0;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 35px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #ffb400;
+}
+
+/* 轮播图 */
+.banner {
+    width: 1200px;
+    height: 420px;
+    margin: 25px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px #ccc;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.banner img:first-child {
+    display: block;
+}
+
+/* 通用内容块 */
+.content-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.title-h2 {
+    font-size: 22px;
+    border-left: 5px solid #ffb400;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+/* 表单样式 注册/留言通用 */
+.form-container {
+    width: 520px;
+    margin: 40px auto;
+}
+
+.form-item {
+    margin: 18px 0;
+}
+
+.form-item label {
+    display: inline-block;
+    width: 110px;
+    font-size: 15px;
+}
+
+.form-item input,
+.form-item textarea {
+    width: 320px;
+    padding: 9px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-item textarea {
+    height: 120px;
+    resize: none;
+}
+
+.btn {
+    width: 130px;
+    height: 38px;
+    background-color: #283655;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #ffb400;
+}
+
+.tip-text {
+    color: #e53935;
+    font-size: 14px;
+    height: 22px;
+}
+
+/* 表格样式 参观指南 */
+.info-table {
+    width: 85%;
+    margin: 25px auto;
+    border-collapse: collapse;
+}
+
+.info-table th,
+.info-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+
+.info-table th {
+    background-color: #283655;
+    color: #fff;
+}
+
+.info-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* 选项卡样式 展馆页面 */
+.tab-wrap {
+    margin-top: 20px;
+}
+
+.tab-title {
+    display: flex;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-title li {
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab-title li.active {
+    color: #ffb400;
+    border-bottom: 2px solid #ffb400;
+}
+
+.tab-content {
+    padding: 20px 0;
+}
+
+.tab-content > div {
+    display: none;
+}
+
+.tab-content > div:first-child {
+    display: block;
+}
+
+.exhibit-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.exhibit-item {
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+
+.exhibit-item img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* 新闻列表 */
+.news-list li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.news-list a {
+    font-size: 16px;
+}
+
+.news-time {
+    color: #888;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+/* 联系页面侧边信息 */
+.contact-wrap {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-left {
+    width: 40%;
+}
+
+.contact-right {
+    width: 60%;
+}
+
+/* 页脚 */
+footer {
+    background-color: #283655;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
